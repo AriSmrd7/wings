@@ -27,6 +27,15 @@
             </div>
 
             <div class="form-group form-floating mb-3">
+                <input type="text" class="form-control" name="name" value="{{ old('name') }}"
+                    placeholder="Nama Lengkap" required="required" autofocus>
+                <label for="floatingName">Nama Lengkap</label>
+                @if ($errors->has('name'))
+                <span class="text-danger text-left">{{ $errors->first('name') }}</span>
+                @endif
+            </div>
+
+            <div class="form-group form-floating mb-3">
                 <input type="password" class="form-control" name="password" value="{{ old('password') }}"
                     placeholder="Password" required="required">
                 <label for="floatingPassword">Password</label>
