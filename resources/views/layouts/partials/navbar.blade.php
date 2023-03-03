@@ -6,8 +6,7 @@
       </a>
 
       <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 text-warning">Halaman Utama</a></li>
-        <li><a href="#" class="nav-link px-2 text-white">Produk</a></li>
+        <li><a href="#" class="nav-link px-2 text-warning">Produk</a></li>
         <li><a href="#" class="nav-link px-2 text-white">Pesanan</a></li>
         <li><a href="#" class="nav-link px-2 text-white">Keranjang</a></li>
       </ul>
@@ -17,9 +16,9 @@
       </form>
 
       @auth
-        {{auth()->user()->name}}
+        <b class="me-3">{{auth()->user()->name}} </b>
         <div class="text-end">
-          <a href="{{ route('logout.perform') }}" class="btn btn-outline-light me-2">Logout</a>
+          <a href="{{ route('logout.perform') }}" class="btn btn-outline-warning me-2">Logout</a>
         </div>
       @endauth
 
