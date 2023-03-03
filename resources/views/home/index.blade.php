@@ -4,7 +4,7 @@
     <div class="bg-light p-5 rounded">
         @auth
         <h1>Halaman Utama</h1>
-        <p class="lead">Mohon login terlebih dahulu</p>
+        <p class="lead">Selamat Datang</p>
         @endauth
 
         @guest
