@@ -8,7 +8,6 @@
       <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
         <li><a href="{{ route('products.list') }}" class="nav-link px-2 text-warning">Produk</a></li>
         <li><a href="#" class="nav-link px-2 text-white">Pesanan</a></li>
-        <li><a href="#" class="nav-link px-2 text-white">Keranjang</a></li>
       </ul>
 
       <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -17,6 +16,9 @@
 
       @auth
         <b class="me-3">{{auth()->user()->name}} </b>
+        <div class="text-end me-3">
+          <a href="{{ route('logout.perform') }}" class="btn btn-outline-light me-2">Keranjang Saya</a>
+        </div>
         <div class="text-end">
           <a href="{{ route('logout.perform') }}" class="btn btn-outline-warning me-2">Logout</a>
         </div>
