@@ -16,7 +16,8 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
 {   
     Route::get('/', 'HomeController@index')->name('home.index');
     Route::get('/admin', 'HomeController@admin')->name('admin.index');
-    Route::get('products', 'ProductController@productList')->name('products.list');
+    Route::get('/products', 'ProductController@productList')->name('products.list');
+    Route::get('/products/{idProduct}', 'ProductController@productDetail')->name('products.detail');
     
     Route::group(['middleware' => ['guest']], function() {
         Route::get('/register', 'RegisterController@show')->name('register.show');
