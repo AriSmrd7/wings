@@ -54,7 +54,7 @@ class LoginController extends Controller
         if (auth()->user()->is_admin == 1) {
             return redirect()->route('admin.index');
         }else{
-            return redirect()->route('home.index');
+            return redirect()->route('products.list');
         }
     }
 }

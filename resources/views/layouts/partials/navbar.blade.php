@@ -6,7 +6,7 @@
       </a>
 
       <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 text-warning">Produk</a></li>
+        <li><a href="{{ route('products.list') }}" class="nav-link px-2 text-warning">Produk</a></li>
         <li><a href="#" class="nav-link px-2 text-white">Pesanan</a></li>
         <li><a href="#" class="nav-link px-2 text-white">Keranjang</a></li>
       </ul>
