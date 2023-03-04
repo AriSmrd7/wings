@@ -51,6 +51,10 @@ class LoginController extends Controller
      */
     protected function authenticated(Request $request, $user) 
     {
-        return redirect()->intended();
+        if (auth()->user()->is_admin == 1) {
+            return redirect()->route('admin.index');
+        }else{
+            return redirect()->route('home.index');
+        }
     }
 }

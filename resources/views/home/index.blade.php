@@ -3,8 +3,8 @@
 @section('content')
     <div class="bg-light p-5 rounded">
         @auth
-        <h1>Halaman Utama</h1>
-        <p class="lead">Selamat Datang</p>
+        <h1>Produk Utama</h1>
+        <p class="lead">Silahkan pilih produk.</p>
         @endauth
 
         @guest
