@@ -19,11 +19,12 @@
                     class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span>
                 <span class="fas fa-star"></span> </div>
             <div class="price">Rp {{ $product->price }}</div>
-            <form action="" method="POST" enctype="multipart/form-data" class="flex justify-end">
+            <form action="{{route('cart.add')}}" method="POST" enctype="multipart/form-data" class="flex justify-end">
                 @csrf
                 <input type="hidden" value="{{ $product->productCode }}" name="productCode">
                 <input type="hidden" value="{{ $product->productName }}" name="productName">
                 <input type="hidden" value="{{ $product->price }}" name="price">
+                <input type="hidden" value="{{ $product->unit }}" name="unit">
                 <input type="hidden" value="{{ $product->productImage }}" name="productImage">
                 <input type="hidden" value="1" name="qty">
                 <button class="px-4 py-1.5 text-white text-sm btn btn-primary rounded">Beli</button>

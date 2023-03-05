@@ -12,7 +12,10 @@ class Cart extends Model
     protected $table = 'cart';
     protected $keyType = 'string';
     protected $fillable = [
+        'productName',
         'productCode',
+        'productImage',
+        'unit',
         'price',
         'qty',
     ];
