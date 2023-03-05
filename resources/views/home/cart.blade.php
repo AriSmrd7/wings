@@ -45,7 +45,7 @@
                                         <div class="cart_item_text">Rp {{ $product->price }}</div>
                                     </div>
                                     <div class="cart_item_total cart_info_col">
-                                        <div class="cart_item_text">Rp22000</div>
+                                        <div class="cart_item_text">Rp {{ $product->price }}</div>
                                     </div>
                                 </div>
                             </li>
